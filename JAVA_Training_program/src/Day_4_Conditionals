@@ -1,0 +1,30 @@
+public class Day_4_Conditionals{
+    public static void main(String[] args){
+        int a = 10;
+        int b = 20;
+        if(a>b){
+            System.out.println("a is greater than b");
+        }else{
+            System.out.println("b is greater than a");
+        }
+    }
+}
+
+public String fizzString(String str) {
+    
+    int strlength = str.length();
+    char no1 = str.charAt(0);
+    char charx = str.charAt(strlength-1);
+    if(no1 == 'f' && charx=='b'){
+      return "FizzBuzz";
+    }
+    else if(no1=='f'){
+      return "Fizz";
+    }
+    else if(charx=='b'){
+      return "Buzz";
+    }
+  return str;
+}
+  
+
