@@ -2,9 +2,8 @@ package day4;
 
 public class day4 {
     
-}
 
-
+ @SuppressWarnings("unused")
  boolean squirrelPlay(int temp, boolean isSummer) {
     int upperLimit = 90;
     int lowerLimit = 60;
@@ -17,6 +16,7 @@ public class day4 {
     }
     return false;
   }
+
   public String alarmClock(int day, boolean vacation) {
     String alarm = "7:00";
     if(vacation){
@@ -30,6 +30,8 @@ public class day4 {
     }  
     return alarm;
   }
+
+
   public String fizzString(String str) {
     
     int strlength = str.length();
@@ -48,4 +50,4 @@ public class day4 {
 }
   
 
-    
+}

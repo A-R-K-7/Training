@@ -1,16 +1,38 @@
-public class Day_4_Conditionals{
-    public static void main(String[] args){
-        int a = 10;
-        int b = 20;
-        if(a>b){
-            System.out.println("a is greater than b");
-        }else{
-            System.out.println("b is greater than a");
-        }
-    }
-}
+package day4;
 
-public String fizzString(String str) {
+public class day4 {
+    
+
+ @SuppressWarnings("unused")
+ boolean squirrelPlay(int temp, boolean isSummer) {
+    int upperLimit = 90;
+    int lowerLimit = 60;
+    if(isSummer){
+      upperLimit = 100;
+    }
+    
+    if(temp>=lowerLimit && temp<=upperLimit){
+      return true;
+    }
+    return false;
+  }
+
+  public String alarmClock(int day, boolean vacation) {
+    String alarm = "7:00";
+    if(vacation){
+      alarm = "10:00";
+      if(day==0 || day ==6){
+        alarm = "off";
+      }
+    }
+    else if(day==0 || day ==6){
+      alarm = "10:00"; 
+    }  
+    return alarm;
+  }
+
+
+  public String fizzString(String str) {
     
     int strlength = str.length();
     char no1 = str.charAt(0);
@@ -28,3 +50,4 @@ public String fizzString(String str) {
 }
   
 
+}
