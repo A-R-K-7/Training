@@ -1,4 +1,7 @@
-class Solution {
+
+import java.util.HashMap;
+
+class Solution2 {
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         int length = nums.length;
@@ -30,5 +33,25 @@ class Solution {
 
 
     }
+
+    public class Solution1 {
+        public int[] threeSum(int[] nums, int target) {
+            int indexes[] = new int[3];
+            for (int i = 0; i < nums.length; i++) {
+                for (int j = i + 1; j < nums.length; j++) {
+                    for (int k = j + 1; k < nums.length; k++) {
+                        if (nums[i] + nums[j] + nums[k] == target) {
+                            indexes[0] = i;
+                            indexes[1] = j;
+                            indexes[2] = k;
+                            return indexes;
+                        }
+                    }
+                }
+            }
+            return indexes;
+        }
+    }
+    
 }
 

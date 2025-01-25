@@ -16,7 +16,7 @@ public class Day13 {
                 arrays[i][j] = sc.nextInt();
             }
         }
-        
+        sc.close();
         for(int x = 0;x<testcases;x++){
             int result = findEquilibriumIndex(arrays[x]);
             System.out.println(result);
