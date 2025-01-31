@@ -19,7 +19,7 @@ public class Day16 {
         sc.close();
         int floornum = Integer.MIN_VALUE;
         int i = 0;
-        while(arr[i]<=target){
+        while(arr[i]<target){
             floornum = arr[i];
             i++;
         }
